@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDhX-RGOGgz0iZjF6xNKnzoqm6Lct0F56c",
-  authDomain: "bella-v2-dc353.firebaseapp.com",
-  projectId: "bella-v2-dc353",
-  storageBucket: "bella-v2-dc353.firebasestorage.app",
-  messagingSenderId: "440388982030",
-  appId: "1:440388982030:web:35bc54019a0dd85e15335f"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
